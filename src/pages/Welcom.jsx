@@ -14,7 +14,7 @@ const Welcom = () => {
             for Tailwind CSS
           </h1>
           <p className='text-base lg:text-lg font-semibold text-gray-400'>
-            Websty adds component class names to Tailwind CSS so you can make beautiful websites faster than ever.
+            Websty adds  component class names to Tailwind CSS so you can make beautiful websites faster than ever.
           </p>
 
           <div className='flex flex-col lg:flex-row items-center gap-4 py-6 lg:py-10'>
