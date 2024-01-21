@@ -5,6 +5,9 @@ import Dropdown from "../Components/pagesComponents/Dropdown";
 import '../index.css'
 import Modals from "../Components/pagesComponents/Swap";
 import Swap from "../Components/pagesComponents/Swap";
+import Welcom from "./welcom";
+import Components from "../Components/Components";
+
 const Home = () => {
   const location = useLocation();
 
@@ -12,24 +15,26 @@ const Home = () => {
     <>
       <Header />
 
-      <div className="flex  home">
+      <div className="flex flex-col md:flex-row home">
         {/* Sidebar */}
+        <ul className={` menu bg-base-400 rounded-box text-black h-screen overflow-y-scroll w-full md:w-3/12  ${location.pathname === '/' ? 'hidden' : ''}   sticky top-0`}>
+      
+        <div className="bg-base-100 rounded-xl px-3">
+        
+          <li>
 
-        <ul className="menu bg-base-200 rounded-box p-4 text-black h-screen overflow-y-scroll px-6  w-3/12 sticky top-0">
-          <div className="bg-base-100 rounded-xl px-4   ">
-            <li >
-            <div className="relative  my-10 ">
-                  <form>   
-              <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
-              <div className="relative">
+            <div className="relative my-14">
+              <form>
+                <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
+                <div className="relative">
                   <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                      <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                   </div>
-                  <input type="search" id="default-search" className=" p-3  pl-10 w-full text-sm text-gray-900 outline-none bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search ..."  />
-              </div>
-          </form>
+                  <input type="search" id="default-search" className="p-3 pl-10 w-full text-sm text-gray-900 outline-none bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search ..." />
+                </div>
+              </form>
             </div>
-            </li>
+          </li>
             <li>
               <Link>Docs</Link>
             </li>
@@ -160,11 +165,13 @@ const Home = () => {
             </li>
           </div>
         </ul>
+        
 
-        <div className="flex-1  overflow-y-auto  py-20 px-10  ">
-          
+        <div className="flex-1 overflow-y-auto py-10 px-4 md:px-10">
           <Routes>
-            <Route path="Button" element={<Button />} />
+            <Route path="/" element={<Welcom />} />
+            <Route path="/components" element={<Components />} />
+            <Route path="/Button" element={<Button />} />
             <Route path="/Dropdown" element={<Dropdown />} />
             <Route path="/Swap" element={<Swap />} />
           </Routes>

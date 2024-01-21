@@ -38,25 +38,22 @@ const Dropdown = () => {
       </p>
       <p className="py-5 text-gray-600">1 Install <a className="underline" href="https://daisyui.com">daisyUI</a> :</p>
 
-      <LiveProvider code={`npm i -D daisyui@latest`}>
-        <LiveEditor className="border border-gray-900  rounded-xl mb-4 overflow-hidden" />
-        
-        <LivePreview className="py-6" />
-      </LiveProvider>
-  
+      <div className="mockup-code">
+        <pre data-prefix="$"><code>npm i daisyui</code></pre>
+      </div>
+
 
       <p className="py-5 text-gray-600">
         2 Then add <a className="underline" href="https://daisyui.com">daisyUI</a> to your tailwind.config.js files:
       </p>
 
-      <LiveProvider code={`module.exports = {
+      <div className="mockup-code">
+        <pre data-prefix="$"><code>{`module.exports = {
               //...
               plugins: [require("daisyui")],
-            }`}>
-        <LiveEditor className="border border-gray-900  rounded-xl mb-4 overflow-hidden" />
-        
-        <LivePreview className="py-6" />
-      </LiveProvider>
+            }`}</code></pre>
+      </div>
+  
 
       <p className="py-2 text-gray-400"># Dropdown</p>
 
