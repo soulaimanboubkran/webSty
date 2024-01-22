@@ -76,4 +76,11 @@ export const Componentsdata = [
         thubmnail:'https://daisyui.com/images/components/countdown.jpg'
 
     },
+    {
+        id:9,
+        link:'/Avatar',
+        title:'Avatar',
+        thubmnail:'https://daisyui.com/images/components/countdown.jpg'
+
+    }
 ]

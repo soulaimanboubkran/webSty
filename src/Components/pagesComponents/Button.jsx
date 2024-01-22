@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom';
 const Button = () => {
     const [isCopied, setIsCopied] = useState(false);
 
-  const handleCopyClick = () => {
-    navigator.clipboard.writeText(buttonsData);
-    setIsCopied(true);
-    setTimeout(() => setIsCopied(false), 1500);
-  };
+    const handleCopyClick = (code) => {
+      navigator.clipboard.writeText(code);
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 1500);
+    };
   return (
     <>
     <h1 className="text-3xl font-bold pb-5">Button</h1>
@@ -29,7 +29,7 @@ const Button = () => {
            <div key={buttondata.id}>
              <div className="code-viewer">
             <div className="code-toolbar">
-              <button className="copy-button" onClick={handleCopyClick} disabled={isCopied}>
+              <button className="copy-button" onClick={()=>handleCopyClick(item.code)} disabled={isCopied}>
                 {isCopied ? 'Copied!' : <FiCopy />}
               </button>
             </div>

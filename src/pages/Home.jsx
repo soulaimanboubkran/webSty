@@ -7,6 +7,11 @@ import Modals from "../Components/pagesComponents/Swap";
 import Swap from "../Components/pagesComponents/Swap";
 import Welcom from "./welcom";
 import Components from "../Components/Components";
+import Avatar from "../Components/pagesComponents/Avatar";
+import Accordion from "../Components/pagesComponents/Accordion";
+import Badge from "../Components/pagesComponents/Badge";
+import Card from "../Components/pagesComponents/Card";
+
 
 const Home = () => {
   const location = useLocation();
@@ -28,7 +33,7 @@ const Home = () => {
                 <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
                 <div className="relative">
                   <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                    <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                   </div>
                   <input type="search" id="default-search" className="p-3 pl-10 w-full text-sm text-gray-900 outline-none bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search ..." />
                 </div>
@@ -67,17 +72,17 @@ const Home = () => {
                 </ul>
                 <ul>
                   <li>Data display</li>
-                  <li>
-                    <a>Accordion</a>
+                  <li className={` ${location.pathname === '/Accordion' ? 'link text-white' : ''}`}>
+                    <Link to='/Accordion' >Accordion</Link>
                   </li>
-                  <li>
-                    <a>Avatar</a>
+                  <li className={` ${location.pathname === '/Avatar' ? 'link text-white' : ''}`}>
+                    <Link to='/Avatar' >Avatar</Link>
                   </li>
-                  <li>
-                    <a>Badge</a>
+                  <li className={` ${location.pathname === '/Badge' ? 'link text-white' : ''}`}>
+                    <Link to='/Badge' >Badge</Link>
                   </li>
-                  <li>
-                    <a>Card</a>
+                  <li className={` ${location.pathname === '/Card' ? 'link text-white' : ''}`}>
+                    <Link to='/Card' >Card</Link>
                   </li>
                   <li>
                     <a>Carousel</a>
@@ -170,10 +175,15 @@ const Home = () => {
         <div className="flex-1 overflow-y-auto py-10 px-4 md:px-10">
           <Routes>
             <Route path="/" element={<Welcom />} />
+            
             <Route path="/components" element={<Components />} />
             <Route path="/Button" element={<Button />} />
             <Route path="/Dropdown" element={<Dropdown />} />
             <Route path="/Swap" element={<Swap />} />
+            <Route path="/Avatar" element={<Avatar />} />
+            <Route path="/Accordion" element={<Accordion />} />
+            <Route path="/Badge" element={<Badge />} />
+            <Route path="/Card" element={<Card />} />
           </Routes>
         </div>
       </div>
