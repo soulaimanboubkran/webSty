@@ -17,14 +17,14 @@ const Home = () => {
 
       <div className="flex flex-col md:flex-row home">
         {/* Sidebar */}
-        <ul className={` menu bg-base-400 rounded-box text-black h-screen overflow-y-scroll w-full md:w-3/12  ${location.pathname === '/' ? 'hidden' : ''}   sticky top-0`}>
+        <ul className={` menu bg-white rounded-box text-black h-screen  w-full md:w-3/12  ${location.pathname === '/' ? 'hidden' : ''}   sticky top-0`}>
       
         <div className="bg-base-100 rounded-xl px-3">
         
-          <li>
+        
 
-            <div className="relative my-14">
-              <form>
+            <div className="relative  mt-20">
+              <form className="">
                 <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
                 <div className="relative">
                   <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -34,7 +34,7 @@ const Home = () => {
                 </div>
               </form>
             </div>
-          </li>
+  
             <li>
               <Link>Docs</Link>
             </li>
