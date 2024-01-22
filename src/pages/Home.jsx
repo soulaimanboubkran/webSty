@@ -3,7 +3,6 @@ import Header from "../Components/Header";
 import Button from "../Components/pagesComponents/Button";
 import Dropdown from "../Components/pagesComponents/Dropdown";
 import '../index.css'
-import Modals from "../Components/pagesComponents/Swap";
 import Swap from "../Components/pagesComponents/Swap";
 import Welcom from "./welcom";
 import Components from "../Components/Components";
@@ -11,6 +10,23 @@ import Avatar from "../Components/pagesComponents/Avatar";
 import Accordion from "../Components/pagesComponents/Accordion";
 import Badge from "../Components/pagesComponents/Badge";
 import Card from "../Components/pagesComponents/Card";
+import Carousel from "../Components/pagesComponents/Carousel";
+import Chat from "../Components/pagesComponents/Chat";
+import Collapse from "../Components/pagesComponents/Collapse";
+import Countdown from "../Components/pagesComponents/Countdown";
+import Diff from "../Components/pagesComponents/Diff";
+import Kbd from "../Components/pagesComponents/Kbd";
+import Stat from "../Components/pagesComponents/Stat";
+import Table from "../Components/pagesComponents/Table";
+import Timeline from "../Components/pagesComponents/Timeline";
+import Breadcrumbs from "../Components/pagesComponents/Breadcrumbs";
+import BottomNavigation from "../Components/pagesComponents/BottomNavigation";
+import LinkComponent from "../Components/pagesComponents/Link";
+import Menu from "../Components/pagesComponents/Menu";
+import Navbar from "../Components/pagesComponents/Navbar";
+import Pagination from "../Components/pagesComponents/Pagination";
+import Steps from "../Components/pagesComponents/Steps";
+import Tab from "../Components/pagesComponents/Tab";
 
 
 const Home = () => {
@@ -22,13 +38,10 @@ const Home = () => {
 
       <div className="flex flex-col md:flex-row home">
         {/* Sidebar */}
-        <ul className={` menu bg-white rounded-box text-black h-screen  w-full md:w-3/12  ${location.pathname === '/' ? 'hidden' : ''}   sticky top-0`}>
-      
-        <div className="bg-base-100 rounded-xl px-3">
-        
-        
+        <ul className={`menu bg-base-400 col-3/6 text-black p-0 h-screen w-full md:w-3/12 ${location.pathname === '/' ? 'hidden md:block' : ''} sticky top-1`}>
+          <div className="bg-base-100 relative overflow-y-scroll px-3">
 
-            <div className="relative  mt-20">
+            <div className="r  mt-10">
               <form className="">
                 <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
                 <div className="relative">
@@ -84,59 +97,59 @@ const Home = () => {
                   <li className={` ${location.pathname === '/Card' ? 'link text-white' : ''}`}>
                     <Link to='/Card' >Card</Link>
                   </li>
-                  <li>
-                    <a>Carousel</a>
+                  <li className={` ${location.pathname === '/Carousel' ? 'link text-white' : ''}`}>
+                    <Link to='/Carousel' >Carousel</Link>
                   </li>
-                  <li>
-                    <a>Chat bubble</a>
+                  <li className={` ${location.pathname === '/Chat' ? 'link text-white' : ''}`}>
+                    <Link to='/Chat' >Chat</Link>
                   </li>
-                  <li>
-                    <a>Collapse</a>
+                  <li className={` ${location.pathname === '/Collapse' ? 'link text-white' : ''}`}>
+                    <Link to='/Collapse' >Collapse</Link>
                   </li>
-                  <li>
-                    <a>Countdown</a>
+                  <li className={` ${location.pathname === '/Countdown' ? 'link text-white' : ''}`}>
+                    <Link to='/Countdown' >Countdown</Link>
                   </li>
-                  <li>
-                    <a>Diff</a>
+                  <li className={` ${location.pathname === '/Diff' ? 'link text-white' : ''}`}>
+                    <Link to='/Diff' >Diff</Link>
                   </li>
-                  <li>
-                    <a>Kbd</a>
+                  <li className={` ${location.pathname === '/Kbd' ? 'link text-white' : ''}`}>
+                    <Link to='/Kbd' >Kbd</Link>
                   </li>
-                  <li>
-                    <a>Table</a>
+                  <li className={` ${location.pathname === '/Stat' ? 'link text-white' : ''}`}>
+                    <Link to='/Stat' >Stat</Link>
                   </li>
-                  <li>
-                    <a>Stat</a>
+                  <li className={` ${location.pathname === '/Table' ? 'link text-white' : ''}`}>
+                    <Link to='/Table' >Table</Link>
                   </li>
-                  <li>
-                    <a>Timeline</a>
+                  <li className={` ${location.pathname === '/Timeline' ? 'link text-white' : ''}`}>
+                    <Link to='/Timeline' >Timeline</Link>
                   </li>
                 </ul>
                 <ul>
                   <li>Navigation</li>
-                  <li>
-                    <a>Breadcrumbs</a>
+                  <li className={` ${location.pathname === '/Breadcrumbs' ? 'link text-white' : ''}`}>
+                    <Link to='/Breadcrumbs' >Breadcrumbs</Link>
                   </li>
-                  <li>
-                    <a>Bottom navigation</a>
+                  <li className={` ${location.pathname === '/BottomNavigation' ? 'link text-white' : ''}`}>
+                    <Link to='/BottomNavigation'>Bottom Navigation</Link>
                   </li>
-                  <li>
-                    <a>Link</a>
+                  <li className={` ${location.pathname === '/Link' ? 'link text-white' : ''}`}>
+                    <Link to='/Link'>Link</Link>
                   </li>
-                  <li>
-                    <a>Menu</a>
+                  <li className={` ${location.pathname === '/Menu' ? 'link text-white' : ''}`}>
+                    <Link to='/Menu'>Menu</Link>
                   </li>
-                  <li>
-                    <a>Navbar</a>
+                  <li className={` ${location.pathname === '/Navbar' ? 'link text-white' : ''}`}>
+                    <Link to='/Navbar'>Navbar</Link>
                   </li>
-                  <li>
-                    <a>Pagination</a>
+                  <li className={` ${location.pathname === '/Pagination' ? 'link text-white' : ''}`}>
+                    <Link to='/Pagination'>Pagination</Link>
                   </li>
-                  <li>
-                    <a>Steps</a>
+                  <li className={` ${location.pathname === '/Steps' ? 'link text-white' : ''}`}>
+                    <Link to='/Steps'>Steps</Link>
                   </li>
-                  <li>
-                    <a>Tab</a>
+                  <li className={` ${location.pathname === '/Tab' ? 'link text-white' : ''}`}>
+                    <Link to='/Tab'>Tab</Link>
                   </li>
                 </ul>
                 <ul>
@@ -172,7 +185,7 @@ const Home = () => {
         </ul>
         
 
-        <div className="flex-1 overflow-y-auto py-10 px-4 md:px-10">
+        <div className="flex-2 col-3/6 overflow-y-auto py-10 px-4 md:px-10">
           <Routes>
             <Route path="/" element={<Welcom />} />
             
@@ -184,6 +197,23 @@ const Home = () => {
             <Route path="/Accordion" element={<Accordion />} />
             <Route path="/Badge" element={<Badge />} />
             <Route path="/Card" element={<Card />} />
+            <Route path="/Carousel" element={<Carousel />} />
+             <Route path="/Chat" element={<Chat />} />
+             <Route path="/Collapse" element={<Collapse />} />
+             <Route path="/Countdown" element={<Countdown />} />
+             <Route path="/Diff" element={<Diff />} />
+             <Route path="/Kbd" element={<Kbd />} />
+             <Route path="/Stat" element={<Stat />} />
+             <Route path="/Table" element={<Table />} />
+             <Route path="/Timeline" element={<Timeline />} />
+             <Route path="/Breadcrumbs" element={<Breadcrumbs />} />
+             <Route path="/BottomNavigation" element={<BottomNavigation />} />
+             <Route path="/Link" element={<LinkComponent />} />
+             <Route path="/Menu" element={<Menu />} />
+             <Route path="/Navbar" element={<Navbar />} />
+             <Route path="/Pagination" element={<Pagination />} />
+             <Route path="/Steps" element={<Steps />} />
+             <Route path="/Tab" element={<Tab />} />
           </Routes>
         </div>
       </div>

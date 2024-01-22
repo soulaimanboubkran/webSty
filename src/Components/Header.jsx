@@ -4,9 +4,9 @@ const Header = () => {
   return (
     <>
     <header>
-    <nav className="bg-white py-5 z-[99999999999] fixed border-gray-200 px-4 lg:px-6 w-full  dark:bg-gray-800">
+    <nav className="bg-white relative py-5  z-[99999999999]  border-gray-200 px-4 lg:px-6 w-full  dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-            <a href="https://flowbite.com" className="flex items-center">
+            <a href="/" className="flex items-center">
                 <img src={logo} className="mr-3 h-8 sm:h-9" alt="Logo" />
             </a>
             <div className="flex items-center lg:order-2">
