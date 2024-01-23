@@ -1,116 +1,82 @@
 export const pagination =[
     {id:1,
-    title:"Badge",
+    title:"Pagination with an active button",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <span className="badge">Badge</span>
+        <div className="join">
+          <button className="join-item btn btn-xs">1</button>
+          <button className="join-item btn btn-xs btn-active">2</button>
+          <button className="join-item btn btn-xs">3</button>
+          <button className="join-item btn btn-xs">4</button>
+        </div>
+        <div className="join">
+          <button className="join-item btn btn-sm">1</button>
+          <button className="join-item btn btn-sm btn-active">2</button>
+          <button className="join-item btn btn-sm">3</button>
+          <button className="join-item btn btn-sm">4</button>
+        </div>
+        <div className="join">
+          <button className="join-item btn btn-md">1</button>
+          <button className="join-item btn btn-md btn-active">2</button>
+          <button className="join-item btn btn-md">3</button>
+          <button className="join-item btn btn-md">4</button>
+        </div>
+        <div className="join">
+          <button className="join-item btn btn-lg">1</button>
+          <button className="join-item btn btn-lg btn-active">2</button>
+          <button className="join-item btn btn-lg">3</button>
+          <button className="join-item btn btn-lg">4</button>
+        </div>
     </div>
     `,
 
 },{id:2,
-    title:"Badge with brand colors",
+    title:"With a disabled button",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge">default</div>
-        <div className="badge badge-neutral">neutral</div>
-        <div className="badge badge-primary">primary</div>
-        <div className="badge badge-secondary">secondary</div>
-        <div className="badge badge-accent">accent</div>
-        <div className="badge badge-ghost">ghost</div>
+        <div className="join">
+          <button className="join-item btn">1</button>
+          <button className="join-item btn">2</button>
+          <button className="join-item btn btn-disabled">...</button>
+          <button className="join-item btn">99</button>
+          <button className="join-item btn">100</button>
+        </div>
     </div>
     `,
 
 },{id:3,
-    title:"Outline badge",
+    title:"Extra small buttons",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge badge-outline">default</div>
-        <div className="badge badge-primary badge-outline">primary</div>
-        <div className="badge badge-secondary badge-outline">secondary</div>
-        <div className="badge badge-accent badge-outline">accent</div>
+        <div className="join">
+          <button className="join-item btn">«</button>
+          <button className="join-item btn">Page 22</button>
+          <button className="join-item btn">»</button>
+        </div>
     </div>
     `,
 
 },{id:4,
-    title:"Badge sizes",
+    title:"Nex/Prev outline buttons with equal width",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge badge-lg">987,654</div>
-        <div className="badge badge-md">987,654</div>
-        <div className="badge badge-sm">987,654</div>
-        <div className="badge badge-xs">987,654</div>
+        <div className="join grid grid-cols-2">
+          <button className="join-item btn btn-outline">Previous page</button>
+          <button className="join-item btn btn-outline">Next</button>
+        </div>
     </div>
     `,
 
 },{id:5,
-    title:"Empty badge",
+    title:"Using radio inputs",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge badge-primary badge-lg"></div>
-        <div className="badge badge-primary badge-md"></div>
-        <div className="badge badge-primary badge-sm"></div>
-        <div className="badge badge-primary badge-xs"></div>
-    </div>
-    `,
-
-},{id:6,
-    title:"Badge with state colors",
-    code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-         <div className="badge badge-info gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           info
-         </div>
-         <div className="badge badge-success gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           success
-         </div>
-         <div className="badge badge-warning gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           warning
-         </div>
-         <div className="badge badge-error gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           error
-         </div>
-    </div>
-    `,
-
-},{id:7,
-    title:"Badge in a text",
-    code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <h2 className="text-xl">
-          Heading
-          <span className="badge badge-lg">NEW</span>
-        </h2>
-        <h3 className="text-lg">
-          Heading
-          <span className="badge badge-md">NEW</span>
-        </h3>
-        <h4 className="text-base">
-          Heading
-          <span className="badge badge-sm">NEW</span>
-        </h4>
-        <h5 className="text-sm">
-          Heading
-          <span className="badge badge-xs">NEW</span>
-        </h5>
-    </div>
-    `,
-
-},{id:8,
-    title:"Badge in a button",
-    code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <button className="btn">
-          Inbox
-          <div className="badge">+99</div>
-        </button>
-        <button className="btn">
-          Inbox
-          <div className="badge badge-secondary">+99</div>
-        </button>
+        <div className="join">
+          <input className="join-item btn btn-square" type="radio" name="options" aria-label="1" checked />
+          <input className="join-item btn btn-square" type="radio" name="options" aria-label="2" />
+          <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
+          <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
+        </div>
     </div>
     `,
 

@@ -1,116 +1,108 @@
 export const kbd =[
     {id:1,
-    title:"Badge",
+    title:"Kbd",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <span className="badge">Badge</span>
+        <kbd className="kbd">A</kbd>
     </div>
     `,
 
 },{id:2,
-    title:"Badge with brand colors",
+    title:"Kbd sizes",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge">default</div>
-        <div className="badge badge-neutral">neutral</div>
-        <div className="badge badge-primary">primary</div>
-        <div className="badge badge-secondary">secondary</div>
-        <div className="badge badge-accent">accent</div>
-        <div className="badge badge-ghost">ghost</div>
+        <kbd className="kbd kbd-lg">Shift</kbd>
+        <kbd className="kbd kbd-md">Shift</kbd>
+        <kbd className="kbd kbd-sm">Shift</kbd>
+        <kbd className="kbd kbd-xs">Shift</kbd>
     </div>
     `,
 
 },{id:3,
-    title:"Outline badge",
+    title:"In text",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge badge-outline">default</div>
-        <div className="badge badge-primary badge-outline">primary</div>
-        <div className="badge badge-secondary badge-outline">secondary</div>
-        <div className="badge badge-accent badge-outline">accent</div>
+        Press <kbd className="kbd kbd-sm">F</kbd> to pay respects.
     </div>
     `,
 
 },{id:4,
-    title:"Badge sizes",
+    title:"Key combination",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge badge-lg">987,654</div>
-        <div className="badge badge-md">987,654</div>
-        <div className="badge badge-sm">987,654</div>
-        <div className="badge badge-xs">987,654</div>
+         <kbd className="kbd">ctrl</kbd>
+         +
+         <kbd className="kbd">shift</kbd>
+         +
+         <kbd className="kbd">del</kbd>
     </div>
     `,
 
 },{id:5,
-    title:"Empty badge",
+    title:"Function Keys",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge badge-primary badge-lg"></div>
-        <div className="badge badge-primary badge-md"></div>
-        <div className="badge badge-primary badge-sm"></div>
-        <div className="badge badge-primary badge-xs"></div>
+        <kbd className="kbd">⌘</kbd>
+        <kbd className="kbd">⌥</kbd>
+        <kbd className="kbd">⇧</kbd>
+        <kbd className="kbd">⌃</kbd>
     </div>
     `,
 
 },{id:6,
-    title:"Badge with state colors",
+    title:"A full keyboard",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-         <div className="badge badge-info gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           info
-         </div>
-         <div className="badge badge-success gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           success
-         </div>
-         <div className="badge badge-warning gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           warning
-         </div>
-         <div className="badge badge-error gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           error
-         </div>
+        <div className="flex justify-center gap-1 my-1 w-full">
+          <kbd className="kbd">q</kbd>
+          <kbd className="kbd">w</kbd>
+          <kbd className="kbd">e</kbd>
+          <kbd className="kbd">r</kbd>
+          <kbd className="kbd">t</kbd>
+          <kbd className="kbd">y</kbd>
+          <kbd className="kbd">u</kbd>
+          <kbd className="kbd">i</kbd>
+          <kbd className="kbd">o</kbd>
+          <kbd className="kbd">p</kbd>
+        </div> 
+        <div className="flex justify-center gap-1 my-1 w-full">
+          <kbd className="kbd">a</kbd>
+          <kbd className="kbd">s</kbd>
+          <kbd className="kbd">d</kbd>
+          <kbd className="kbd">f</kbd>
+          <kbd className="kbd">g</kbd>
+          <kbd className="kbd">h</kbd>
+          <kbd className="kbd">j</kbd>
+          <kbd className="kbd">k</kbd>
+          <kbd className="kbd">l</kbd>
+        </div> 
+        <div className="flex justify-center gap-1 my-1 w-full">
+          <kbd className="kbd">z</kbd>
+          <kbd className="kbd">x</kbd>
+          <kbd className="kbd">c</kbd>
+          <kbd className="kbd">v</kbd>
+          <kbd className="kbd">b</kbd>
+          <kbd className="kbd">n</kbd>
+          <kbd className="kbd">m</kbd>
+          <kbd className="kbd">/</kbd>
+        </div>
     </div>
     `,
 
 },{id:7,
-    title:"Badge in a text",
+    title:"Arrow Keys",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <h2 className="text-xl">
-          Heading
-          <span className="badge badge-lg">NEW</span>
-        </h2>
-        <h3 className="text-lg">
-          Heading
-          <span className="badge badge-md">NEW</span>
-        </h3>
-        <h4 className="text-base">
-          Heading
-          <span className="badge badge-sm">NEW</span>
-        </h4>
-        <h5 className="text-sm">
-          Heading
-          <span className="badge badge-xs">NEW</span>
-        </h5>
-    </div>
-    `,
-
-},{id:8,
-    title:"Badge in a button",
-    code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <button className="btn">
-          Inbox
-          <div className="badge">+99</div>
-        </button>
-        <button className="btn">
-          Inbox
-          <div className="badge badge-secondary">+99</div>
-        </button>
+        <div className="flex justify-center w-full">
+          <kbd className="kbd">▲</kbd>
+        </div>
+        <div className="flex justify-center gap-12 w-full">
+          <kbd className="kbd">◀︎</kbd>
+          <kbd className="kbd">▶︎</kbd>
+        </div>
+        <div className="flex justify-center w-full">
+          <kbd className="kbd">▼</kbd>
+        </div>
     </div>
     `,
 

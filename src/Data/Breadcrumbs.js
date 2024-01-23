@@ -1,116 +1,60 @@
 export const breadcrumbs =[
     {id:1,
-    title:"Badge",
+    title:"BadgeBreadcrumbs",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <span className="badge">Badge</span>
+        <div className="text-sm breadcrumbs">
+          <ul>
+            <li><a>Home</a></li> 
+            <li><a>Documents</a></li> 
+            <li>Add Document</li>
+          </ul>
+        </div>
     </div>
     `,
 
 },{id:2,
-    title:"Badge with brand colors",
+    title:"Breadcrumbs with icons",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge">default</div>
-        <div className="badge badge-neutral">neutral</div>
-        <div className="badge badge-primary">primary</div>
-        <div className="badge badge-secondary">secondary</div>
-        <div className="badge badge-accent">accent</div>
-        <div className="badge badge-ghost">ghost</div>
+        <div className="text-sm breadcrumbs">
+          <ul>
+            <li>
+              <a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                Home
+              </a>
+            </li> 
+            <li>
+              <a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg>
+                Documents
+              </a>
+            </li> 
+            <li>
+              <span className="inline-flex gap-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                Add Document
+              </span>
+            </li>
+          </ul>
+        </div>
     </div>
     `,
 
 },{id:3,
-    title:"Outline badge",
+    title:"Breadcrumbs with max-width",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge badge-outline">default</div>
-        <div className="badge badge-primary badge-outline">primary</div>
-        <div className="badge badge-secondary badge-outline">secondary</div>
-        <div className="badge badge-accent badge-outline">accent</div>
-    </div>
-    `,
-
-},{id:4,
-    title:"Badge sizes",
-    code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge badge-lg">987,654</div>
-        <div className="badge badge-md">987,654</div>
-        <div className="badge badge-sm">987,654</div>
-        <div className="badge badge-xs">987,654</div>
-    </div>
-    `,
-
-},{id:5,
-    title:"Empty badge",
-    code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge badge-primary badge-lg"></div>
-        <div className="badge badge-primary badge-md"></div>
-        <div className="badge badge-primary badge-sm"></div>
-        <div className="badge badge-primary badge-xs"></div>
-    </div>
-    `,
-
-},{id:6,
-    title:"Badge with state colors",
-    code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-         <div className="badge badge-info gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           info
-         </div>
-         <div className="badge badge-success gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           success
-         </div>
-         <div className="badge badge-warning gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           warning
-         </div>
-         <div className="badge badge-error gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           error
-         </div>
-    </div>
-    `,
-
-},{id:7,
-    title:"Badge in a text",
-    code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <h2 className="text-xl">
-          Heading
-          <span className="badge badge-lg">NEW</span>
-        </h2>
-        <h3 className="text-lg">
-          Heading
-          <span className="badge badge-md">NEW</span>
-        </h3>
-        <h4 className="text-base">
-          Heading
-          <span className="badge badge-sm">NEW</span>
-        </h4>
-        <h5 className="text-sm">
-          Heading
-          <span className="badge badge-xs">NEW</span>
-        </h5>
-    </div>
-    `,
-
-},{id:8,
-    title:"Badge in a button",
-    code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <button className="btn">
-          Inbox
-          <div className="badge">+99</div>
-        </button>
-        <button className="btn">
-          Inbox
-          <div className="badge badge-secondary">+99</div>
-        </button>
+        <div className="max-w-xs text-sm breadcrumbs">
+          <ul>
+            <li>Long text 1</li>
+            <li>Long text 2</li>
+            <li>Long text 3</li>
+            <li>Long text 4</li>
+            <li>Long text 5</li>
+          </ul>
+        </div>
     </div>
     `,
 

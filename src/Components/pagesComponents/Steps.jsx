@@ -35,9 +35,7 @@ const Steps = () => {
               </button>
             </div>
             <LiveProvider code={item.code}>
-              <LiveEditor className="border border-gray-900 rounded-xl mb-4 overflow-hidden" />
-              <LiveError />
-              <div className="grid">
+            <div className="grid mb-4">
                 <div className="tabs tabs-lifted z-10 -mb-[var(--tab-border)] justify-self-start">
                   <button className="tab tab-active [--tab-bg:var(--fallback-b1,oklch(var(--b1)))]">
                     Preview
@@ -47,8 +45,22 @@ const Steps = () => {
                 </div>
                   <div className="preview border-base-300  bg-base-100 rounded-b-box rounded-se-box flex min-h-[6rem] min-w-[18rem] max-w-4xl flex-wrap items-center justify-center gap-2 overflow-x-hidden bg-cover bg-top p-4 [border-width:var(--tab-border)] undefined">
                     <LivePreview className=''/>
-                </div>
+                        
+                    <div className="flex flex-wrap overflow-x-hidden items-center  ">
+                        <div className="collapse bg-base-200">
+                          <input type="checkbox" /> 
+                          <div className="collapse-title text-xl font-medium">
+                           Jsx 
+                          </div>
+                          <div className="collapse-content"> 
+                          <LiveEditor className="border border-gray-900 rounded-xl mb-4 overflow-hidden" />
+                          
+                          </div>
+                        </div>
+                    </div>
+                </div>  
               </div>
+              <LiveError />
             </LiveProvider>
           </div>
         </div>

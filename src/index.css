@@ -19,3 +19,16 @@ body{
 .home {
     padding-top: 0%;
 }
+.bg-primary {
+    --tw-bg-opacity: 1;
+    background-color:rgb(68, 186, 174);
+}
+.text-secondary {
+    --tw-text-opacity: 1;
+    color: palevioletred;
+}
+.bg-secondary {
+    --tw-text-opacity: 1;
+    background-color: palevioletred;
+}
+

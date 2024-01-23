@@ -1,116 +1,275 @@
 export const carousel =[
     {id:1,
-    title:"Badge",
+    title:"Snap to start (default)",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <span className="badge">Badge</span>
+        <div className="carousel rounded-box">
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Burger" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" alt="Burger" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Burger" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Burger" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Burger" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Burger" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Burger" />
+          </div>
+        </div>
     </div>
     `,
 
 },{id:2,
-    title:"Badge with brand colors",
+    title:"Snap to center",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge">default</div>
-        <div className="badge badge-neutral">neutral</div>
-        <div className="badge badge-primary">primary</div>
-        <div className="badge badge-secondary">secondary</div>
-        <div className="badge badge-accent">accent</div>
-        <div className="badge badge-ghost">ghost</div>
+        <div className="carousel carousel-center rounded-box">
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Pizza" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" alt="Pizza" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Pizza" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Pizza" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Pizza" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Pizza" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Pizza" />
+          </div>
+        </div>
     </div>
     `,
 
 },{id:3,
-    title:"Outline badge",
+    title:"Snap to end",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge badge-outline">default</div>
-        <div className="badge badge-primary badge-outline">primary</div>
-        <div className="badge badge-secondary badge-outline">secondary</div>
-        <div className="badge badge-accent badge-outline">accent</div>
+        <div className="carousel carousel-end rounded-box">
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Drink" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" alt="Drink" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Drink" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Drink" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Drink" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Drink" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Drink" />
+          </div>
+        </div>
     </div>
     `,
 
 },{id:4,
-    title:"Badge sizes",
+    title:"Carousel with full width items",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge badge-lg">987,654</div>
-        <div className="badge badge-md">987,654</div>
-        <div className="badge badge-sm">987,654</div>
-        <div className="badge badge-xs">987,654</div>
+        <div className="w-64 carousel rounded-box">
+          <div className="carousel-item w-full">
+            <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+          </div> 
+          <div className="carousel-item w-full">
+            <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+          </div> 
+          <div className="carousel-item w-full">
+            <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+          </div> 
+          <div className="carousel-item w-full">
+            <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+          </div> 
+          <div className="carousel-item w-full">
+            <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+          </div> 
+          <div className="carousel-item w-full">
+            <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+          </div> 
+          <div className="carousel-item w-full">
+            <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className="w-full" alt="Tailwind CSS Carousel component" />
+          </div>
+        </div>
     </div>
     `,
 
 },{id:5,
-    title:"Empty badge",
+    title:"Vertical carousel",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge badge-primary badge-lg"></div>
-        <div className="badge badge-primary badge-md"></div>
-        <div className="badge badge-primary badge-sm"></div>
-        <div className="badge badge-primary badge-xs"></div>
+        <div className="h-96 carousel carousel-vertical rounded-box">
+          <div className="carousel-item h-full">
+            <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" />
+          </div> 
+          <div className="carousel-item h-full">
+            <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" />
+          </div> 
+          <div className="carousel-item h-full">
+            <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" />
+          </div> 
+          <div className="carousel-item h-full">
+            <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" />
+          </div> 
+          <div className="carousel-item h-full">
+            <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" />
+          </div> 
+          <div className="carousel-item h-full">
+            <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" />
+          </div> 
+          <div className="carousel-item h-full">
+            <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" />
+          </div>
+        </div>
     </div>
     `,
 
 },{id:6,
-    title:"Badge with state colors",
+    title:"Carousel with half width items",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-         <div className="badge badge-info gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           info
-         </div>
-         <div className="badge badge-success gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           success
-         </div>
-         <div className="badge badge-warning gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           warning
-         </div>
-         <div className="badge badge-error gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           error
-         </div>
+        <div className="carousel rounded-box w-96">
+          <div className="carousel-item w-1/2">
+            <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" className="w-full" />
+          </div> 
+          <div className="carousel-item w-1/2">
+            <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" className="w-full" />
+          </div> 
+          <div className="carousel-item w-1/2">
+            <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" className="w-full" />
+          </div> 
+          <div className="carousel-item w-1/2">
+            <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" className="w-full" />
+          </div> 
+          <div className="carousel-item w-1/2">
+            <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" className="w-full" />
+          </div> 
+          <div className="carousel-item w-1/2">
+            <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" className="w-full" />
+          </div> 
+          <div className="carousel-item w-1/2">
+            <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className="w-full" />
+          </div>
+        </div>
     </div>
     `,
 
 },{id:7,
-    title:"Badge in a text",
+    title:"Full-bleed carousel",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <h2 className="text-xl">
-          Heading
-          <span className="badge badge-lg">NEW</span>
-        </h2>
-        <h3 className="text-lg">
-          Heading
-          <span className="badge badge-md">NEW</span>
-        </h3>
-        <h4 className="text-base">
-          Heading
-          <span className="badge badge-sm">NEW</span>
-        </h4>
-        <h5 className="text-sm">
-          Heading
-          <span className="badge badge-xs">NEW</span>
-        </h5>
+        <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box">
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" className="rounded-box" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" className="rounded-box" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" className="rounded-box" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" className="rounded-box" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" className="rounded-box" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" className="rounded-box" />
+          </div> 
+          <div className="carousel-item">
+            <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" className="rounded-box" />
+          </div>
+        </div>
     </div>
     `,
 
 },{id:8,
-    title:"Badge in a button",
+    title:"Carousel with indicator buttons",
     code:`
     <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <button className="btn">
-          Inbox
-          <div className="badge">+99</div>
-        </button>
-        <button className="btn">
-          Inbox
-          <div className="badge badge-secondary">+99</div>
-        </button>
+        <div className="carousel w-full">
+          <div id="item1" className="carousel-item w-full">
+            <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />
+          </div> 
+          <div id="item2" className="carousel-item w-full">
+            <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" className="w-full" />
+          </div> 
+          <div id="item3" className="carousel-item w-full">
+            <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" className="w-full" />
+          </div> 
+          <div id="item4" className="carousel-item w-full">
+            <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" className="w-full" />
+          </div>
+        </div> 
+        <div className="flex justify-center w-full py-2 gap-2">
+          <a href="#item1" className="btn btn-xs">1</a> 
+          <a href="#item2" className="btn btn-xs">2</a> 
+          <a href="#item3" className="btn btn-xs">3</a> 
+          <a href="#item4" className="btn btn-xs">4</a>
+        </div>
+    </div>
+    `,
+
+},{id:9,
+    title:"Carousel with next/prev buttons",
+    code:`
+    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
+        <div className="carousel w-full">
+          <div id="slide1" className="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" className="btn btn-circle">❮</a> 
+              <a href="#slide2" className="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" className="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" className="w-full" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" className="btn btn-circle">❮</a> 
+              <a href="#slide3" className="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" className="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" className="w-full" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" className="btn btn-circle">❮</a> 
+              <a href="#slide4" className="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" className="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" className="w-full" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" className="btn btn-circle">❮</a> 
+              <a href="#slide1" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
     </div>
     `,
 

@@ -1,116 +1,137 @@
 export const chat =[
     {id:1,
-    title:"Badge",
+    title:"chat-start and chat-end",
     code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <span className="badge">Badge</span>
+    <div className=" overflow-x-hidden gap-3">
+         <div className="chat chat-start">
+           <div className="chat-bubble">It's over Anakin, <br/>I have the high ground.</div>
+         </div>
+         <div className="chat chat-end">
+           <div className="chat-bubble">You underestimate my power!</div>
+         </div>
     </div>
     `,
 
 },{id:2,
-    title:"Badge with brand colors",
+    title:"Chat with image",
     code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge">default</div>
-        <div className="badge badge-neutral">neutral</div>
-        <div className="badge badge-primary">primary</div>
-        <div className="badge badge-secondary">secondary</div>
-        <div className="badge badge-accent">accent</div>
-        <div className="badge badge-ghost">ghost</div>
+    <div className=" overflow-x-hidden items-center justify-center gap-3">
+        <div className="chat chat-start">
+          <div className="chat-image avatar">
+            <div className="w-10 rounded-full">
+              <img alt="Tailwind CSS chat bubble component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            </div>
+          </div>
+          <div className="chat-bubble">It was said that you would, destroy the Sith, not join them.</div>
+        </div>
+        <div className="chat chat-start">
+          <div className="chat-image avatar">
+            <div className="w-10 rounded-full">
+              <img alt="Tailwind CSS chat bubble component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            </div>
+          </div>
+          <div className="chat-bubble">It was you who would bring balance to the Force</div>
+        </div>
+        <div className="chat chat-start">
+          <div className="chat-image avatar">
+            <div className="w-10 rounded-full">
+              <img alt="Tailwind CSS chat bubble component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            </div>
+          </div>
+          <div className="chat-bubble">Not leave it in Darkness</div>
+        </div>
     </div>
     `,
 
 },{id:3,
-    title:"Outline badge",
+    title:"Chat with image, header and footer",
     code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge badge-outline">default</div>
-        <div className="badge badge-primary badge-outline">primary</div>
-        <div className="badge badge-secondary badge-outline">secondary</div>
-        <div className="badge badge-accent badge-outline">accent</div>
+    <div className=" overflow-x-hidden items-center  gap-3">
+        <div className="chat chat-start">
+          <div className="chat-image avatar">
+            <div className="w-10 rounded-full">
+              <img alt="Tailwind CSS chat bubble component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            </div>
+          </div>
+          <div className="chat-header">
+            Obi-Wan Kenobi
+            <time className="text-xs opacity-50">12:45</time>
+          </div>
+          <div className="chat-bubble">You were the Chosen One!</div>
+          <div className="chat-footer opacity-50">
+            Delivered
+          </div>
+        </div>
+        <div className="chat chat-end">
+          <div className="chat-image avatar">
+            <div className="w-10 rounded-full">
+              <img alt="Tailwind CSS chat bubble component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            </div>
+          </div>
+          <div className="chat-header">
+            Anakin
+            <time className="text-xs opacity-50">12:46</time>
+          </div>
+          <div className="chat-bubble">I hate you!</div>
+          <div className="chat-footer opacity-50">
+            Seen at 12:46
+          </div>
+        </div>
     </div>
     `,
 
 },{id:4,
-    title:"Badge sizes",
+    title:"Chat with header and footer",
     code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge badge-lg">987,654</div>
-        <div className="badge badge-md">987,654</div>
-        <div className="badge badge-sm">987,654</div>
-        <div className="badge badge-xs">987,654</div>
+    <div className=" overflow-x-hidden  gap-3">
+        <div className="chat chat-start">
+          <div className="chat-header">
+            Obi-Wan Kenobi
+            <time className="text-xs opacity-50">2 hours ago</time>
+          </div>
+          <div className="chat-bubble">You were the Chosen One!</div>
+          <div className="chat-footer opacity-50">
+            Seen
+          </div>
+        </div>
+        <div className="chat chat-start">
+          <div className="chat-header">
+            Obi-Wan Kenobi
+            <time className="text-xs opacity-50">2 hour ago</time>
+          </div>
+          <div className="chat-bubble">I loved you.</div>
+          <div className="chat-footer opacity-50">
+            Delivered
+          </div>
+        </div>
     </div>
     `,
 
 },{id:5,
-    title:"Empty badge",
+    title:"Chat Bubble with colors",
     code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <div className="badge badge-primary badge-lg"></div>
-        <div className="badge badge-primary badge-md"></div>
-        <div className="badge badge-primary badge-sm"></div>
-        <div className="badge badge-primary badge-xs"></div>
-    </div>
-    `,
-
-},{id:6,
-    title:"Badge with state colors",
-    code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-         <div className="badge badge-info gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           info
-         </div>
-         <div className="badge badge-success gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           success
-         </div>
-         <div className="badge badge-warning gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           warning
-         </div>
-         <div className="badge badge-error gap-2">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-4 h-4 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-           error
-         </div>
-    </div>
-    `,
-
-},{id:7,
-    title:"Badge in a text",
-    code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <h2 className="text-xl">
-          Heading
-          <span className="badge badge-lg">NEW</span>
-        </h2>
-        <h3 className="text-lg">
-          Heading
-          <span className="badge badge-md">NEW</span>
-        </h3>
-        <h4 className="text-base">
-          Heading
-          <span className="badge badge-sm">NEW</span>
-        </h4>
-        <h5 className="text-sm">
-          Heading
-          <span className="badge badge-xs">NEW</span>
-        </h5>
-    </div>
-    `,
-
-},{id:8,
-    title:"Badge in a button",
-    code:`
-    <div className="flex flex-wrap overflow-x-hidden items-center justify-center gap-3">
-        <button className="btn">
-          Inbox
-          <div className="badge">+99</div>
-        </button>
-        <button className="btn">
-          Inbox
-          <div className="badge badge-secondary">+99</div>
-        </button>
+    <div className="flex flex-col overflow-x-hidden  gap-3">
+        <div className="chat chat-start">
+          <div className="chat-bubble chat-bubble-primary">What kind of nonsense is this</div>
+        </div>
+        <div className="chat chat-start">
+          <div className="chat-bubble chat-bubble-secondary">Put me on the Council and not make me a Master!??</div>
+        </div>
+        <div className="chat chat-start">
+          <div className="chat-bubble chat-bubble-accent">That's never been done in the history of the Jedi. It's insulting!</div>
+        </div>
+        <div className="chat chat-end">
+          <div className="chat-bubble chat-bubble-info">Calm down, Anakin.</div>
+        </div>
+        <div className="chat chat-end">
+          <div className="chat-bubble chat-bubble-success">You have been given a great honor.</div>
+        </div>
+        <div className="chat chat-end">
+          <div className="chat-bubble chat-bubble-warning">To be on the Council at your age.</div>
+        </div>
+        <div className="chat chat-end">
+          <div className="chat-bubble chat-bubble-error">It's never happened before.</div>
+        </div>
     </div>
     `,
 
