@@ -34,7 +34,7 @@ const Home = () => {
 
       <div className="flex flex-col md:flex-row home">
         {/* Sidebar */}
-        <ul className={`menu bg-base-400 col-4/6 text-black p-0 h-screen rounded-xl w-full md:w-3/12 ${location.pathname === '/' ? 'hidden md:block' : ''} sticky top-1`}>
+        <ul className={`menu bg-base-400 col-4/6 text-black p-0 h-screen rounded-xl w-full md:w-3/12 ${location.pathname === '/' ? 'hidden ' : ''} sticky top-1`}>
           <div className="bg-base-100 relative overflow-y-scroll px-3">
 
             <div className="r  mt-10">
