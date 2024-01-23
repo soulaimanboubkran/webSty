@@ -1,14 +1,14 @@
 export const Componentsdata = [
     {
         id:1,
-        link:'/navbar',
+        link:'headers',
         title:'Navbar',
         thubmnail:'https://daisyui.com/images/components/navbar.jpg'
 
     },
     {
         id:2,
-        link:'/footer',
+        link:'footer',
         title:'Footer',
         thubmnail:'https://daisyui.com/images/components/footer.jpg'
 

@@ -29,6 +29,8 @@ import Progress from "../Components/pagesComponents/Progress";
 import Skeleton from "../Components/pagesComponents/Skelton";
 import Toast from "../Components/pagesComponents/Toast";
 import Tooltip from "../Components/pagesComponents/Tooltip";
+import Headers from "../Components/CompleteComponents/Headers";
+import Footer from "../Components/CompleteComponents/Footer";
 
 
 const Home = () => {
@@ -40,7 +42,7 @@ const Home = () => {
 
       <div className="flex flex-col md:flex-row home">
         {/* Sidebar */}
-        <ul className={`menu bg-base-400 col-4/6 text-black p-0 h-screen rounded-xl w-full md:w-3/12 ${location.pathname === '/' ? 'hidden ' : ''} sticky top-1`}>
+        <ul className={`menu bg-base-400 col-4/6 text-black p-0 h-screen hidden lg:block rounded-xl w-full md:w-3/12 ${location.pathname === '/' ? 'hidden ' : ''} sticky top-1`}>
           <div className="bg-base-100 relative overflow-y-scroll px-3">
 
             <div className="r  mt-10">
@@ -181,6 +183,12 @@ const Home = () => {
           <Routes>
             <Route path="/" element={<Welcom />} />
             
+            {/* complete Components */}
+
+            <Route path="/headers" element={<Headers />} />
+            <Route path="/footer" element={<Footer />} />
+
+
             <Route path="/components" element={<Components />} />
             <Route path="/Button" element={<Button />} />
             <Route path="/Dropdown" element={<Dropdown />} />
