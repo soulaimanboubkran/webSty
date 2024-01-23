@@ -3,8 +3,11 @@ import { useState } from 'react';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { FiCopy } from 'react-icons/fi';
 
-import { alert } from '../../Data/Alert';
-const Progress = () => {
+
+import { skeleton } from '../../Data/Skeleton';
+
+
+const Skeleton = () => {
     const [isCopied, setIsCopied] = useState(false);
 
   const handleCopyClick = (code) => {
@@ -14,8 +17,8 @@ const Progress = () => {
   }
   return (
     <>
-      <h1 className="text-3xl font-bold pb-5">Alert</h1>
-      {alert.map((item) => (
+      <h1 className="text-3xl font-bold pb-5">Skeleton</h1>
+      {skeleton.map((item) => (
         <div key={item.id} >
         
   
@@ -67,4 +70,4 @@ const Progress = () => {
   
       }
 
-export default Progress
+export default Skeleton

@@ -23,6 +23,12 @@ import Navbar from "../Components/pagesComponents/Navbar";
 import Pagination from "../Components/pagesComponents/Pagination";
 import Steps from "../Components/pagesComponents/Steps";
 import Tab from "../Components/pagesComponents/Tab";
+import Alert from "../Components/pagesComponents/Alert";
+import Loading from "../Components/pagesComponents/Loading";
+import Progress from "../Components/pagesComponents/Progress";
+import Skeleton from "../Components/pagesComponents/Skelton";
+import Toast from "../Components/pagesComponents/Toast";
+import Tooltip from "../Components/pagesComponents/Tooltip";
 
 
 const Home = () => {
@@ -142,26 +148,24 @@ const Home = () => {
                 </ul>
                 <ul>
                   <li>Feedback</li>
-                  <li>
-                    <Link>Alert</Link>
+                  <li className={` ${location.pathname === '/Alert' ? 'link text-white' : ''}`}>
+                    <Link to='/Alert'>Alert</Link>
                   </li>
-                  <li>
-                    <Link>Loading</Link>
+                  <li className={` ${location.pathname === '/Loading' ? 'link text-white' : ''}`}>
+                    <Link to='/Loading'>Loading</Link>
                   </li>
-                  <li>
-                    <Link>Progress</Link>
+                  <li className={` ${location.pathname === '/Progress' ? 'link text-white' : ''}`}>
+                    <Link to='/Progress'>Progress</Link>
                   </li>
-                  <li>
-                    <Link>Radial Progress</Link>
+                 
+                  <li className={` ${location.pathname === '/Skeleton' ? 'link text-white' : ''}`}>
+                    <Link to='/Skeleton'>Skeleton</Link>
                   </li>
-                  <li>
-                    <Link>Skelton</Link>
+                  <li className={` ${location.pathname === '/Toast' ? 'link text-white' : ''}`}>
+                    <Link to='/Toast'>Toast</Link>
                   </li>
-                  <li>
-                    <Link>Toast</Link>
-                  </li>
-                  <li>
-                    <Link>Tooltip</Link>
+                  <li className={` ${location.pathname === '/Tooltip' ? 'link text-white' : ''}`}>
+                    <Link to='/Tooltip'>Tooltip</Link>
                   </li>
                 </ul>
               </details>
@@ -198,7 +202,16 @@ const Home = () => {
              <Route path="/Pagination" element={<Pagination />} />
              <Route path="/Steps" element={<Steps />} />
              <Route path="/Tab" element={<Tab />} />
-          </Routes>
+             <Route path="/Alert" element={<Alert />} />
+             <Route path="/Loading" element={<Loading />} />
+             <Route path="/Progress" element={<Progress />} />
+             <Route path="/Skeleton" element={<Skeleton />} />
+             <Route path="/Toast" element={<Toast />} />
+             <Route path="/Tooltip" element={<Tooltip />} />
+          {/**    
+             <Route path="/Toast" element={<Toast />} />
+             <Route path="/Tooltip" element={<Tooltip />} />*/}
+          </Routes> 
         </div>
       </div>
     </>

@@ -4,7 +4,7 @@ import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { FiCopy } from 'react-icons/fi';
 
 import { alert } from '../../Data/Alert';
-const Progress = () => {
+const Alert = () => {
     const [isCopied, setIsCopied] = useState(false);
 
   const handleCopyClick = (code) => {
@@ -67,4 +67,4 @@ const Progress = () => {
   
       }
 
-export default Progress
+export default Alert

@@ -3,8 +3,11 @@ import { useState } from 'react';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { FiCopy } from 'react-icons/fi';
 
-import { alert } from '../../Data/Alert';
-const Progress = () => {
+
+import { tooltip } from '../../Data/Tooltip';
+
+
+const Tooltip = () => {
     const [isCopied, setIsCopied] = useState(false);
 
   const handleCopyClick = (code) => {
@@ -14,8 +17,8 @@ const Progress = () => {
   }
   return (
     <>
-      <h1 className="text-3xl font-bold pb-5">Alert</h1>
-      {alert.map((item) => (
+      <h1 className="text-3xl font-bold pb-5">Tooltip</h1>
+      {tooltip.map((item) => (
         <div key={item.id} >
         
   
@@ -40,7 +43,7 @@ const Progress = () => {
                  
                   <div className="tab [--tab-border-color:transparent]"></div>
                 </div>
-                  <div className="preview border-base-300  bg-base-100 rounded-b-box rounded-se-box flex min-h-[6rem] min-w-[18rem] max-w-4xl flex-wrap items-center justify-center gap-2 overflow-x-hidden bg-cover bg-top p-4 [border-width:var(--tab-border)] undefined">
+                  <div className="preview border-base-300 bg-base-100 rounded-b-box rounded-se-box flex min-h-[6rem] min-w-[18rem] max-w-4xl flex-wrap items-center justify-center gap-2 overflow-x-hidden bg-cover bg-top p-4 [border-width:var(--tab-border)] undefined">
                     <LivePreview className=''/>
                         
                     <div className="flex flex-wrap overflow-x-hidden items-center  ">
@@ -67,4 +70,4 @@ const Progress = () => {
   
       }
 
-export default Progress
+export default Tooltip
