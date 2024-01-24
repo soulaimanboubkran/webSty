@@ -4,6 +4,7 @@ import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { FiCopy } from 'react-icons/fi';
 
 import { alert } from '../../Data/Alert';
+import { Link } from 'react-router-dom';
 const Alert = () => {
     const [isCopied, setIsCopied] = useState(false);
 
@@ -62,7 +63,17 @@ const Alert = () => {
           </div>
         </div>
       ))}
+
+<div className="flex justify-between items-center py-10 px-5">
+        <Link to='/Tab' className="border px-20 py-2 rounded-xl font-semibold hover:scale-105  bg-white text-black">
+          Previous
+        </Link>
+        <Link to='/Loading' className="border px-20 py-2 rounded-xl font-semibold hover:scale-105 bg-black text-white">
+          Next
+        </Link>
+      </div>
     </>
+
   );
   
       }

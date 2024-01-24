@@ -180,7 +180,7 @@ const Swap = () => {
         <Link to='/Dropdown' className="border px-20 py-2 rounded-xl font-semibold hover:scale-105  bg-white text-black">
           Previous
         </Link>
-        <Link to='/ThemeController' className="border px-20 py-2 rounded-xl font-semibold hover:scale-105 bg-black text-white">
+        <Link to='/Accordion' className="border px-20 py-2 rounded-xl font-semibold hover:scale-105 bg-black text-white">
           Next
         </Link>
       </div>

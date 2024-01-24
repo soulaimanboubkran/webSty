@@ -31,31 +31,32 @@ import Toast from "../Components/pagesComponents/Toast";
 import Tooltip from "../Components/pagesComponents/Tooltip";
 import Headers from "../Components/CompleteComponents/Headers";
 import Footer from "../Components/CompleteComponents/Footer";
+import { useState } from "react";
 
 
 const Home = () => {
   const location = useLocation();
+  const [search ,setSearch] = useState('')
+
+  const handleSearch = (e) =>{
+    e.preventDefault()
+
+    
+      location.pathname = search
+   
+  } 
+
+  
 
   return (
     <>
-      <Header />
+      <Header setSearch={setSearch} handleSearch={handleSearch}/>
 
-      <div className="flex flex-col md:flex-row home">
+      <div className="flex gap-5 flex-col lg:flex col md:flex-row home py-32">
         {/* Sidebar */}
-        <ul className={`menu bg-base-400 col-4/6 text-black p-0 h-screen hidden lg:block rounded-xl w-full md:w-3/12 ${location.pathname === '/' ? 'hidden ' : ''} sticky top-1`}>
-          <div className="bg-base-100 relative overflow-y-scroll px-3">
+        <ul className={`menu bg-base-400 col-4/6 text-black pt-20  lg:h-screen  block rounded-xl w-full md:w-3/12 ${location.pathname === '/' ? 'hidden ' : ''} lg:sticky top-2`}>
+          <div className="bg-base-100  overflow-scroll  h-screen px-3">
 
-            <div className="r  mt-10">
-              <form className="">
-                <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
-                <div className="relative">
-                  <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                    <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                  </div>
-                  <input type="search" id="default-search" className="p-3 pl-10 w-full text-sm text-gray-900 outline-none bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search ..." />
-                </div>
-              </form>
-            </div>
   
             <li>
               <Link>Docs</Link>

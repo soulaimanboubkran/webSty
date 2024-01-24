@@ -5,6 +5,7 @@ import { FiCopy } from 'react-icons/fi';
 
 
 import { navbar } from '../../Data/Navbar';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -43,7 +44,7 @@ const Navbar = () => {
                  
                   <div className="tab [--tab-border-color:transparent]"></div>
                 </div>
-                  <div class="preview border-base-300 bg-base-100 rounded-b-box rounded-se-box min-h-[6rem] min-w-[18rem] w-full flex-wrap   gap-2 overflow-x-hidden bg-cover bg-top p-4 [border-width:var(--tab-border)] undefined">
+                  <div className="preview border-base-300 bg-base-100 rounded-b-box rounded-se-box min-h-[6rem] min-w-[18rem] w-full flex-wrap   gap-2 overflow-x-hidden bg-cover bg-top p-4 [border-width:var(--tab-border)] undefined">
                     <LivePreview className=''/>
                         
                     <div className="flex flex-wrap overflow-x-hidden items-center  ">
@@ -65,6 +66,15 @@ const Navbar = () => {
           </div>
         </div>
       ))}
+
+<div className="flex justify-between items-center py-10 px-5">
+        <Link to='/Menu' className="border px-20 py-2 rounded-xl font-semibold hover:scale-105  bg-white text-black">
+          Previous
+        </Link>
+        <Link to='/Pagination' className="border px-20 py-2 rounded-xl font-semibold hover:scale-105 bg-black text-white">
+          Next
+        </Link>
+      </div>
     </>
   );
   

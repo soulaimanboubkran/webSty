@@ -5,6 +5,7 @@ import { FiCopy } from 'react-icons/fi';
 
 
 import { stat } from '../../Data/Stat';
+import { Link } from 'react-router-dom';
 
 
 const Stat = () => {
@@ -65,6 +66,15 @@ const Stat = () => {
           </div>
         </div>
       ))}
+
+<div className="flex justify-between items-center py-10 px-5">
+        <Link to='/Kbd' className="border px-20 py-2 rounded-xl font-semibold hover:scale-105  bg-white text-black">
+          Previous
+        </Link>
+        <Link to='/Table' className="border px-20 py-2 rounded-xl font-semibold hover:scale-105 bg-black text-white">
+          Next
+        </Link>
+      </div>
     </>
   );
   

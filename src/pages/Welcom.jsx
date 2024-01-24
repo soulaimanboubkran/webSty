@@ -3,10 +3,10 @@ import gif1 from '../assets/gif3.gif'
 
 const Welcom = () => {
   return (
-    <section className=' flex items-center px-10 py-10'>
-      <main className='container mx-auto flex flex-col lg:flex-row'>
+    <section className=' flex items-center px-10 pt-10'>
+      <main className='container mx-auto flex flex-col lg:flex-row pt-10'>
         <div className="w-full lg:w-7/12 ">
-          <h1 className='text-4xl lg:text-6xl mb-6 lg:mb-10 font-extrabold'>
+          <h1 className='text-4xl lg:text-6xl mb-6 lg:mb-10 font-extrabold '>
             The most popular <br />
             <span className="bg-gradient-to-r from-primary to-danger bg-clip-text text-transparent">
               component library
