@@ -32,6 +32,7 @@ import Tooltip from "../Components/pagesComponents/Tooltip";
 import Headers from "../Components/CompleteComponents/Headers";
 import Footer from "../Components/CompleteComponents/Footer";
 import Welcome from "./welcom";
+import Docs from "../Components/pagesComponents/Docs";
 
 const Home = () => {
   const location = useLocation();
@@ -66,6 +67,7 @@ const Home = () => {
     { path: "/Skeleton", element: <Skeleton /> },
     { path: "/Toast", element: <Toast /> },
     { path: "/Tooltip", element: <Tooltip /> },
+    { path: "/Docs", element: <Docs /> },
   ];
 
  
@@ -75,18 +77,16 @@ const Home = () => {
     <>
       <Header />
 
-      <div className="flex gap-5 flex-col lg:flex col md:flex-row home py-32">
+      <div className="flex gap-5 flex-col lg:flex col md:flex-row home pt-32">
         {/* Sidebar */}
-        <ul className={`menu bg-base-400 col-4/6 text-black pt-20  lg:h-screen  block rounded-xl w-full md:w-3/12 ${location.pathname === '/' ? 'hidden ' : ''} lg:sticky top-2`}>
-          <div className="bg-base-100  overflow-scroll  h-screen px-3">
+        <ul className={`menu bg-base-400 col-4/6 text-black pt-20  h-full  block rounded-xl w-full md:w-3/12 ${location.pathname === '/' ? 'hidden ' : ''} lg:sticky top-2`}>
+          <div className="bg-base-100  overflow-scroll  h-screen px-3 pt-10">
 
   
-            <li>
-              <Link>Docs</Link>
+            <li className={` ${location.pathname === '/Docs' ? 'link text-white ' : ''}`}>
+              <Link to='/Docs'>Docs</Link>
             </li>
-            <li>
-              <Link>Install</Link>
-            </li>
+          
             <li>
               <details open>
                 <summary>Components</summary>
@@ -214,6 +214,7 @@ const Home = () => {
           </Routes> 
         </div>
       </div>
+      
     </>
   );
 };
