@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import gif1 from '../assets/gif3.gif'
 
-const Welcom = () => {
+const Welcome = () => {
   return (
     <section className=' flex items-center px-10 pt-10'>
       <main className='container mx-auto flex flex-col lg:flex-row pt-10'>
@@ -34,4 +34,4 @@ const Welcom = () => {
   )
 }
 
-export default Welcom
+export default Welcome

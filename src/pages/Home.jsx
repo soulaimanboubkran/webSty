@@ -31,26 +31,49 @@ import Toast from "../Components/pagesComponents/Toast";
 import Tooltip from "../Components/pagesComponents/Tooltip";
 import Headers from "../Components/CompleteComponents/Headers";
 import Footer from "../Components/CompleteComponents/Footer";
-import { useState } from "react";
-
+import Welcome from "./welcom";
 
 const Home = () => {
   const location = useLocation();
-  const [search ,setSearch] = useState('')
+  const routes = [
+    { path: "/", element: <Welcome /> },
+    { path: "/headers", element: <Headers /> },
+    { path: "/footer", element: <Footer /> },
+    { path: "/components", element: <Components /> },
+    { path: "/Button", element: <Button /> },
+    { path: "/Dropdown", element: <Dropdown /> },
+    { path: "/Swap", element: <Swap /> },
+    { path: "/Avatar", element: <Avatar /> },
+    { path: "/Accordion", element: <Accordion /> },
+    { path: "/Badge", element: <Badge /> },
+    { path: "/Card", element: <Card /> },
+    { path: "/Carousel", element: <Carousel /> },
+    { path: "/Chat", element: <Chat /> },
+    { path: "/Collapse", element: <Collapse /> },
+    { path: "/Kbd", element: <Kbd /> },
+    { path: "/Stat", element: <Stat /> },
+    { path: "/Table", element: <Table /> },
+    { path: "/Timeline", element: <Timeline /> },
+    { path: "/Breadcrumbs", element: <Breadcrumbs /> },
+    { path: "/Menu", element: <Menu /> },
+    { path: "/Navbar", element: <Navbar /> },
+    { path: "/Pagination", element: <Pagination /> },
+    { path: "/Steps", element: <Steps /> },
+    { path: "/Tab", element: <Tab /> },
+    { path: "/Alert", element: <Alert /> },
+    { path: "/Loading", element: <Loading /> },
+    { path: "/Progress", element: <Progress /> },
+    { path: "/Skeleton", element: <Skeleton /> },
+    { path: "/Toast", element: <Toast /> },
+    { path: "/Tooltip", element: <Tooltip /> },
+  ];
 
-  const handleSearch = (e) =>{
-    e.preventDefault()
-
-    
-      location.pathname = search
-   
-  } 
-
+ 
   
 
   return (
     <>
-      <Header setSearch={setSearch} handleSearch={handleSearch}/>
+      <Header />
 
       <div className="flex gap-5 flex-col lg:flex col md:flex-row home py-32">
         {/* Sidebar */}
@@ -182,41 +205,9 @@ const Home = () => {
 
         <div className="flex-1 col-2/6 overflow-y-auto py-10 px-4 md:px-10">
           <Routes>
-            <Route path="/" element={<Welcom />} />
-            
-            {/* complete Components */}
-
-            <Route path="/headers" element={<Headers />} />
-            <Route path="/footer" element={<Footer />} />
-
-
-            <Route path="/components" element={<Components />} />
-            <Route path="/Button" element={<Button />} />
-            <Route path="/Dropdown" element={<Dropdown />} />
-            <Route path="/Swap" element={<Swap />} />
-            <Route path="/Avatar" element={<Avatar />} />
-            <Route path="/Accordion" element={<Accordion />} />
-            <Route path="/Badge" element={<Badge />} />
-            <Route path="/Card" element={<Card />} />
-            <Route path="/Carousel" element={<Carousel />} />
-             <Route path="/Chat" element={<Chat />} />
-             <Route path="/Collapse" element={<Collapse />} />
-             <Route path="/Kbd" element={<Kbd />} />
-             <Route path="/Stat" element={<Stat />} />
-             <Route path="/Table" element={<Table />} />
-             <Route path="/Timeline" element={<Timeline />} />
-             <Route path="/Breadcrumbs" element={<Breadcrumbs />} />
-             <Route path="/Menu" element={<Menu />} />
-             <Route path="/Navbar" element={<Navbar />} />
-             <Route path="/Pagination" element={<Pagination />} />
-             <Route path="/Steps" element={<Steps />} />
-             <Route path="/Tab" element={<Tab />} />
-             <Route path="/Alert" element={<Alert />} />
-             <Route path="/Loading" element={<Loading />} />
-             <Route path="/Progress" element={<Progress />} />
-             <Route path="/Skeleton" element={<Skeleton />} />
-             <Route path="/Toast" element={<Toast />} />
-             <Route path="/Tooltip" element={<Tooltip />} />
+          {routes.map((route, index) => (
+  <Route key={index} path={route.path} element={route.element} />
+))}
           {/**    
              <Route path="/Toast" element={<Toast />} />
              <Route path="/Tooltip" element={<Tooltip />} />*/}
