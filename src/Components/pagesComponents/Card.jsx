@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { FiCopy } from 'react-icons/fi';
 
-import { avatar } from '../../Data/Avatar';
 import { card } from '../../Data/Card';
 import { Link } from 'react-router-dom';
 const Card = () => {
@@ -52,8 +51,7 @@ const Card = () => {
                            Jsx 
                           </div>
                           <div className="collapse-content"> 
-                          <LiveEditor className="border border-gray-900 rounded-xl mb-4 overflow-hidden" />
-                          
+                          <LiveEditor   className="border border-gray-900 rounded-xl mb-4 overflow-hidden" />                         
                           </div>
                         </div>
                     </div>
