@@ -30,8 +30,9 @@ import Toast from "../Components/pagesComponents/Toast";
 import Tooltip from "../Components/pagesComponents/Tooltip";
 import Headers from "../Components/CompleteComponents/Headers";
 import Footer from "../Components/CompleteComponents/Footer";
-import Welcome from "./welcom.jsx";
+
 import Docs from "../Components/pagesComponents/Docs";
+import Welcome from "./Welcome";
 
 const Home = () => {
   const location = useLocation();
@@ -204,6 +205,7 @@ const Home = () => {
 
         <div className="flex-1 col-2/6 overflow-y-auto py-10 px-4 md:px-10">
           <Routes>
+
           {routes.map((route, index) => (
   <Route key={index} path={route.path} element={route.element} />
 ))}
