@@ -4,7 +4,7 @@ import Button from "../Components/pagesComponents/Button";
 import Dropdown from "../Components/pagesComponents/Dropdown";
 import '../index.css'
 import Swap from "../Components/pagesComponents/Swap";
-import Welcom from "./welcom";
+import Welcome from "./welcom";
 import Components from "../Components/Components";
 import Avatar from "../Components/pagesComponents/Avatar";
 import Accordion from "../Components/pagesComponents/Accordion";
