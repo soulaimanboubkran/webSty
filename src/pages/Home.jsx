@@ -30,7 +30,7 @@ import Toast from "../Components/pagesComponents/Toast";
 import Tooltip from "../Components/pagesComponents/Tooltip";
 import Headers from "../Components/CompleteComponents/Headers";
 import Footer from "../Components/CompleteComponents/Footer";
-import Welcome from "./welcom";
+import Welcome from "./welcom.jsx";
 import Docs from "../Components/pagesComponents/Docs";
 
 const Home = () => {
