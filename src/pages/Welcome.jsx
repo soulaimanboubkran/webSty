@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom'
 import gif1 from '../assets/gif3.gif'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Welcome = () => {
+
+ 
   return (
     <div >
-        <section className=' flex items-center   px-10 pt-10'>
-      <main className='container mx-auto flex flex-col lg:flex-row pt-10'>
+        <section className=' flex items-center   px-10 '>
+      <main className='container mx-auto flex flex-col lg:flex-row '>
         <div className="w-full lg:w-7/12 ">
           <h1 className='text-4xl lg:text-6xl mb-6 lg:mb-10 font-extrabold '>
             The most popular <br />
@@ -24,7 +26,7 @@ const Welcome = () => {
             <Link to='/components' className='w-full lg:w-auto px-6 py-3 border rounded-xl hover:bg-blue-600 bg-blue-700 text-white text-base lg:text-lg mb-4 lg:mb-0'>
               See components
             </Link>
-            <Link to='/' className='w-full lg:w-auto px-6 py-3 border rounded-xl hover:bg-gray-600 bg-gray-700 text-white text-base lg:text-lg'>
+            <Link to='/' className='w-full lg:w-auto px-6 py-3 border rounded-xl hover:text-white hover:bg-gray-600 bg-gray-300 font-bold text-black  text-base lg:text-lg'>
               How to use ? →
             </Link>
           </div>
