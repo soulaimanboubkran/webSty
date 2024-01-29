@@ -65,8 +65,8 @@ const Header = () => {
 
   return (
     <>
-      <header>
-        <nav className="bg-white py-5 fixed z-[99999999999] w-full border-gray-200 px-4 lg:px-6 dark:bg-gray-800">
+      <header className='mb-4'>
+        <nav className="bg-white py-5 fixed z-[99999999999]  w-full border-gray-200 px-4 lg:px-6 dark:bg-gray-800">
           <div className="flex lg:flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="/" className="flex items-center">
               <img src={logo} className="mr-3 h-8 sm:h-9" alt="Logo" />

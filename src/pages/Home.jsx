@@ -77,7 +77,7 @@ const Home = () => {
     <>
       <Header />
 
-      <div className="flex gap-5 flex-col lg:flex col md:flex-row home pt-32">
+      <div className="flex gap-5 flex-col lg:flex col md:flex-row home  pt-32">
         {/* Sidebar */}
         <ul className={`menu bg-base-400 col-4/6 text-black pt-20  h-full  block rounded-xl w-full md:w-3/12 ${location.pathname === '/' ? 'hidden ' : ''} lg:sticky top-2`}>
           <div className="bg-base-100  overflow-scroll  h-screen px-3 pt-10">

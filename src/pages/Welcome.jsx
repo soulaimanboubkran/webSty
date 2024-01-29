@@ -5,8 +5,8 @@ import React from 'react'
 
 const Welcome = () => {
   return (
-    <div>
-        <section className=' flex items-center px-10 pt-10'>
+    <div >
+        <section className=' flex items-center   px-10 pt-10'>
       <main className='container mx-auto flex flex-col lg:flex-row pt-10'>
         <div className="w-full lg:w-7/12 ">
           <h1 className='text-4xl lg:text-6xl mb-6 lg:mb-10 font-extrabold '>
@@ -34,6 +34,7 @@ const Welcome = () => {
         </div>
       </main>
     </section>
+    
     </div>
   )
 }
