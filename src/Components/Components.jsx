@@ -21,7 +21,7 @@ const Components = () => {
                 className="card p-1 bg-base-100 border hover:shadow-xl"
               >
                 <figure className="p-2 rounded-xl">
-                  <img src={item.thubmnail} alt="Shoes" />
+                  <img src={item.thubmnail} alt="Shoes" className="rounded-xl" />
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">{item.title}</h2>
