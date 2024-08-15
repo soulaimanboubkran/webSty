@@ -35,13 +35,6 @@ export const Componentsdata = [
 
     },
     {
-        id:6,
-        link:'loading',
-        title:'Loading',
-        thubmnail:'https://img.daisyui.com/images/components/loading.webp'
-
-    },
-    {
         id:7,
         link:'menu',
         title:'Menu',
@@ -69,18 +62,13 @@ export const Componentsdata = [
         thubmnail:'https://img.daisyui.com/images/components/checkbox.webp'
 
     },
-    {
-        id:9,
-        link:'countdown',
-        title:'Countdown',
-        thubmnail:'https://img.daisyui.com/images/components/countdown.webp'
-
-    },
+  
     {
         id:9,
         link:'Avatar',
         title:'Avatar',
-        thubmnail:'https://img.daisyui.com/images/components/countdown.webp'
+        thubmnail:'https://img.daisyui.com/images/components/avatar.webp'
 
     }
+    
 ]
