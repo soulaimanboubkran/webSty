@@ -15,70 +15,70 @@ export const Componentsdata = [
     },
     {
         id:3,
-        link:'/card',
+        link:'card',
         title:'Card',
         thubmnail:'https://img.daisyui.com/images/components/card.webp'
 
     },
     {
         id:4,
-        link:'/hero',
+        link:'hero',
         title:'Hero',
         thubmnail:'https://img.daisyui.com/images/components/hero.webp'
 
     },
     {
         id:5,
-        link:'/input_file',
+        link:'input_file',
         title:'File Input',
         thubmnail:'https://img.daisyui.com/images/components/file-input.webp'
 
     },
     {
         id:6,
-        link:'/loading',
+        link:'loading',
         title:'Loading',
         thubmnail:'https://img.daisyui.com/images/components/loading.webp'
 
     },
     {
         id:7,
-        link:'/menu',
+        link:'menu',
         title:'Menu',
         thubmnail:'https://img.daisyui.com/images/components/menu.webp'
 
     },
     {
         id:6,
-        link:'/loading',
+        link:'loading',
         title:'Loading',
         thubmnail:'https://img.daisyui.com/images/components/loading.webp'
 
     },
     {
         id:7,
-        link:'/chat_bubble',
+        link:'chat_bubble',
         title:'Chat bubble',
         thubmnail:'https://img.daisyui.com/images/components/chat.webp'
 
     },
     {
         id:8,
-        link:'/checkbox',
+        link:'checkbox',
         title:'Checkbox',
         thubmnail:'https://img.daisyui.com/images/components/checkbox.webp'
 
     },
     {
         id:9,
-        link:'/countdown',
+        link:'countdown',
         title:'Countdown',
         thubmnail:'https://img.daisyui.com/images/components/countdown.webp'
 
     },
     {
         id:9,
-        link:'/Avatar',
+        link:'Avatar',
         title:'Avatar',
         thubmnail:'https://img.daisyui.com/images/components/countdown.webp'
 
